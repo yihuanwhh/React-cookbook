@@ -1,6 +1,9 @@
 import React from 'react'
 
-import { Carousel, WingBlank } from 'antd-mobile';
+import { Carousel } from 'antd-mobile'
+import Swiper1 from '../../../../assets/images/swiper-1.png'
+import Swiper2 from '../../../../assets/images/swiper-2.jpeg'
+import Swiper3 from '../../../../assets/images/swiper-3.jpeg'
 
 export default class Swiper extends React.Component {
   state = {
@@ -9,16 +12,14 @@ export default class Swiper extends React.Component {
   }
   render() {
     return (
-      <WingBlank>
-        <Carousel
-          autoplay={true}
-          infinite
-        >
-          <div>a</div>
-          <div>a</div>
-          <div>a</div>
-        </Carousel>
-      </WingBlank>
+      <Carousel
+        autoplay={true}
+        infinite
+      >
+        <img src={Swiper1} alt=""/>
+        <img src={Swiper2} alt=""/>
+        <img src={Swiper3} alt=""/>
+      </Carousel>
     );
   }
 }
